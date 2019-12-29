@@ -1,0 +1,49 @@
+2019-12-29 22:27:04,888-59816-E:/python_project/etl/common/ETL_log.py[line:25] - DEBUG: debug
+2019-12-29 22:27:04,890-59816-E:/python_project/etl/common/ETL_log.py[line:28] - INFO: info
+2019-12-29 22:27:59,299-9032-E:/python_project/etl/common/ETL_log.py[line:25] - DEBUG: debug
+2019-12-29 22:27:59,299-9032-E:/python_project/etl/common/ETL_log.py[line:28] - INFO: info
+2019-12-29 22:29:28,046-59160-E:/python_project/etl/common/ETL_log.py[line:25] - DEBUG: debug
+2019-12-29 22:29:28,046-59160-E:/python_project/etl/common/ETL_log.py[line:28] - INFO: info
+2019-12-29 22:30:03,522-54608-E:/python_project/etl/common/ETL_log.py[line:25] - DEBUG: debug
+2019-12-29 22:30:35,015-54608-E:/python_project/etl/common/ETL_log.py[line:28] - INFO: info
+2019-12-29 22:31:55,056-40672-E:/python_project/etl/common/ETL_log.py[line:25] - DEBUG: debug
+2019-12-29 22:31:55,056-40672-E:/python_project/etl/common/ETL_log.py[line:28] - INFO: info
+2019-12-29 22:31:58,150-57612-E:/python_project/etl/common/ETL_log.py[line:25] - DEBUG: debug
+2019-12-29 22:31:58,150-57612-E:/python_project/etl/common/ETL_log.py[line:28] - INFO: info
+2019-12-29 22:32:09,615-56748-E:/python_project/etl/common/ETL_log.py[line:25] - DEBUG: debug
+2019-12-29 22:32:09,615-56748-E:/python_project/etl/common/ETL_log.py[line:28] - INFO: info
+2019-12-29 22:32:35,051-4268-E:/python_project/etl/common/ETL_log.py[line:26] - DEBUG: debug
+2019-12-29 22:32:35,051-4268-E:/python_project/etl/common/ETL_log.py[line:29] - INFO: info
+2019-12-29 22:32:35,051-4268-E:/python_project/etl/common/ETL_log.py[line:33] - WARNING: 警告
+2019-12-29 22:32:35,051-4268-E:/python_project/etl/common/ETL_log.py[line:37] - ERROR: 报错
+2019-12-29 22:32:35,052-4268-E:/python_project/etl/common/ETL_log.py[line:41] - CRITICAL: 严重
+2019-12-29 22:32:51,055-56448-E:/python_project/etl/common/ETL_log.py[line:26] - DEBUG: debug
+2019-12-29 22:32:51,055-56448-E:/python_project/etl/common/ETL_log.py[line:29] - INFO: info
+2019-12-29 22:32:51,055-56448-E:/python_project/etl/common/ETL_log.py[line:33] - WARNING: 警告
+None
+2019-12-29 22:32:51,055-56448-E:/python_project/etl/common/ETL_log.py[line:37] - ERROR: 报错
+None
+2019-12-29 22:32:51,055-56448-E:/python_project/etl/common/ETL_log.py[line:41] - CRITICAL: 严重
+None
+2019-12-29 22:35:25,611-59600-ETL_log[line:26] - DEBUG: debug
+2019-12-29 22:35:25,611-59600-ETL_log[line:29] - INFO: info
+2019-12-29 22:35:25,611-59600-ETL_log[line:33] - WARNING: 警告
+None
+2019-12-29 22:35:25,611-59600-ETL_log[line:37] - ERROR: 报错
+None
+2019-12-29 22:35:25,611-59600-ETL_log[line:41] - CRITICAL: 严重
+None
+2019-12-29 22:35:54,130-56628-ETL_log[ETL_log.py.line:26] - DEBUG: debug
+2019-12-29 22:35:54,131-56628-ETL_log[ETL_log.py.line:29] - INFO: info
+2019-12-29 22:35:54,131-56628-ETL_log[ETL_log.py.line:33] - WARNING: 警告
+None
+2019-12-29 22:35:54,131-56628-ETL_log[ETL_log.py.line:37] - ERROR: 报错
+None
+2019-12-29 22:35:54,131-56628-ETL_log[ETL_log.py.line:41] - CRITICAL: 严重
+None
+2019-12-29 22:38:12,677-59028-ETL_log[ETL_log.py.line:29]-INFO: 测试
+2019-12-29 22:38:19,924-57908-ETL_log[ETL_log.py.line:29]-INFO: 测试
+2019-12-29 22:38:46,318-59344-ETL_log[ETL_log.py.line:29]-INFO: 测试
+2019-12-29 22:45:55,680-59012-test[test.py.line:9]-INFO: aaaa
+2019-12-29 22:46:56,585-59068-test[test.py.line:9]-INFO: aaaa
+2019-12-29 22:46:56,585-59068-test[test.py.line:10]-WARNING: wpc你好啊
