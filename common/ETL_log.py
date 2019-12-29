@@ -4,7 +4,7 @@ from config import common_config
 import logging
 
 
-class Logger(object):
+class ETLLogger(object):
 
     def __init__(self):
         format_str = logging.Formatter(common_config.log_formatter)  # 设置日志格式
@@ -16,7 +16,11 @@ class Logger(object):
         sh.setFormatter(format_str)     # 设置屏幕上显示的格式
         self.logger.addHandler(sh)  # 把对象加到logger里
         if common_config.is_log_file:
-            th = logging.FileHandler(filename=common_config.log_file_path, mode='a', encoding='utf-8')
+            th = logging.FileHandler(
+                filename=common_config.log_file_path,
+                mode=common_config.log_file_mode,
+                encoding='utf-8'
+            )
             th.setFormatter(format_str)  # 设置文件里写入的格式
             self.logger.addHandler(th)
 
@@ -24,7 +28,7 @@ class Logger(object):
         return logging.getLogger(self.logger_name+"."+name)
 
 
-etl_log = Logger()
+etl_log = ETLLogger()
 
 
 

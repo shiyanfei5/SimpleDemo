@@ -10,6 +10,7 @@ sys.setdefaultencoding('utf8')
 # 日志配置
 is_log_file = False      # 是否要开启日志输出
 log_file_path = './1.log'     # 日志文件夹路径
+log_file_mode = 'a'           # 文件日志形式，追加还是覆写
 log_level = logging.DEBUG   # 日志级别
 log_formatter = '%(asctime)s-%(process)d-%(module)s[%(filename)s.line:%(lineno)d]-%(levelname)s: %(message)s'
 
