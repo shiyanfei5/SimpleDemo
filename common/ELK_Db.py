@@ -5,11 +5,13 @@ import psycopg2
 
 class ElkDb:
 
-
-
-    def start_transaction(self):
+    def __init__(self):
         pass
 
 
-    def
+    def execute(self):
+        pass
+
+
+
 
