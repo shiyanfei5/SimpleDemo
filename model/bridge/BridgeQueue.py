@@ -18,7 +18,7 @@ class BridgeQueue(object):
                 group.add(trade_record)
                 return
         new_group = BridgeGroup(trade_record)
-    
+
 
     def addGroup(self,bridge_group):
         self.Queue.append(bridge_group)
