@@ -15,5 +15,10 @@ log_level = logging.DEBUG   # 日志级别
 log_formatter = '%(asctime)s-%(process)d-%(module)s[%(filename)s.line:%(lineno)d]-%(levelname)s: %(message)s'
 
 # 数据库配置
-
-
+db_config = {
+    'dbuser': 'postgres',
+    'password': '123456',
+    'port': '5432',
+    'host': '132.232.54.199',
+    'database': 'postgres'
+}
