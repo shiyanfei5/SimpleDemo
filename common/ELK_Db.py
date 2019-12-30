@@ -35,7 +35,7 @@ class ElkDb:
                 host=self.host,
                 port=self.port
             )
-            self.conn.autocommit = True
+            self.conn.autocommit = True     # 默认 单条语句是一个事务
         except Exception as e:
             logger.error(
                 "%s,%s,%s,%s连接elk数据库失败"%
@@ -57,11 +57,11 @@ class ElkDb:
         cursor = None
         try:
             cursor = self.conn.cursor()
-            cursor.execute(sql)
+            a = cursor.execute(sql)
             rows = cursor.fetchall()
             return rows
         except Exception as e:
-            logger.error("%s  语句出现异常"% sql)
+            logger.error("%s  SQL异常"% sql)
             logger.error(traceback.format_exc())
         finally:
             if cursor is not None:
@@ -77,15 +77,23 @@ class ElkDb:
             count = cursor.execute(sql)
             return count
         except Exception as e:
-            logger.error("%s  语句出现异常"% sql)
+            self.rollback() # 回滚
+            logger.error("%s  SQL异常"% sql)
             logger.error(traceback.format_exc())
         finally:
             if cursor is not None:
                 cursor.close()
 
-    # 滚动游标
-    def cursor_scroll(self, count, mode='relative'):
-        self.cursor.scroll(count, mode=mode)
+    # 开启事务
+    def start_transaction(self):
+        self.checkConnect()
+        self.conn.autocommit = False
+        logger.info("%s,%s,elk数据库事务开启" % (self.host, self.port))
+
+    def end_transaction(self):
+        self.commit()   # 提交事务
+        self.conn.autocommit = True
+        logger.info("%s,%s,elk数据库事务关闭" % (self.host, self.port))
 
     # 提交
     def commit(self):
@@ -104,6 +112,13 @@ class ElkDb:
 
 if __name__ == '__main__':
     db = ElkDb(**db_config)
-
-    res = db.update("insert into test.people values('yfshi2','123','20','100.3','0')")
+    db.start_transaction()
+    res = db.select("select * from test.people")
     print(res)
+    res = db.select("select * from test.people t where t.name = 'yfshi'")
+    print(res)
+
+    res = db.update("insert into test.people values('yfshi3','123','20','100.3','0')")
+    print(res)
+
+    # db.end_transaction()
